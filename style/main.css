@@ -2,3 +2,169 @@ body {
     padding: 0;
     margin: 0;
 }
+
+/*@font-face {*/
+/*    font-family: 'Glyphic   ons Halflings';*/
+/*    src: url(../fonts/glyphicons-halflings-regular.eot);*/
+/*    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix)*/
+/*    format('embedded-opentype'),*/
+/*    url(../font/glyphicons-halflings-regular.woff2)*/
+/*    format('woff2'), url(../font/glyphicons-halflings-regular.woff)*/
+/*    format('woff'), url(../font/glyphicons-halflings-regular.ttf)*/
+/*    format('truetype'),*/
+/*    url(../font/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')*/
+/*}*/
+
+@font-face {
+    font-family: 'Mj_Casablanca Heavy';
+    src : url('../fonts/Mj_Casablanca Heavy.woff');
+    format('woff'), font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Mj_Tunisia';
+    src : url('../fonts/Mj_Tunisia.woff');
+    format('woff'),
+    font-weight: normal;
+    font-style: normal
+}
+
+.font_mj_c {
+    font-family: "Mj_Casablanca Heavy" !important;
+}
+.font_mj_t {
+    font-family: "Mj_Tunisia" !important;
+}
+.header {
+    background-color: #553436 !important;
+    height: 78px;
+    border-bottom: 8px solid rgba(0,0,0,0.1);
+    padding-top: 3px;
+    color: white !important;
+    position: fixed;
+    z-index: 1000000000000000;
+    display: none !important;
+}
+body{
+    line-height: 1.42857143;
+}
+.yellow_color {
+    color: #f0d691 !important;
+}
+* {
+    font-family: "Mj_Tunisia" !important;
+}
+.header-link{
+    font-size: 20px;
+    padding: 0 5px;
+    color: white;
+}
+.logo {
+    width: 50px;
+}
+.header-link a {
+    transition: 0.3s all;
+    color: white !important;
+}
+.header-link a:hover {
+    border-radius: 10px;
+    /*border-bottom: 5px solid #ed5a64;*/
+    color: #ed5a64 !important;
+}
+.text-logo {
+    transition: .5s all;
+    margin-right: 10px;
+    color: #ed5a64 !important;
+    font-size: 25px;
+    margin-top: 3px;
+}
+.text-logo:hover {
+     color: white !important;
+ }
+.me {
+    text-align: center;
+    background-color: #251c1a !important;
+    border-radius: 0 !important;
+    /*border-bottom: 8px solid rgba(0,0,0,0.1);*/
+}
+.img-me {
+    margin: 0 auto 0 auto;
+    max-height: 350px;
+    margin-bottom: 15px;
+    transition: 0.7s all !important;
+}
+.sefarsh {
+    border: 1px solid #ad3740 !important;
+    border-bottom: 3px solid #ad3740 !important;
+    color: #ad3740 !important;
+    margin-right: 10px !important;
+    font-size: 20px !important;
+    transition: 0.5s all !important;
+}
+.know_me {
+    border: 1px solid #fff !important;
+    border-bottom: 3px solid #fff !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    transition: 0.5s all !important;
+}
+.know_me:hover {
+    border: 1px solid #ad3740 !important;
+    border-bottom: 3px solid #ad3740 !important;
+    color: #ad3740 !important;
+    font-size: 20px !important;
+}
+.about{
+    background-color: #3a2a2a !important;
+    overflow: hidden;
+    border-radius: 0 !important;
+    border-top: 8px solid rgba(0,0,0,0.1);
+}
+.about-img {
+    max-width: 100%;
+    height: auto;
+}
+.div-border {
+    width: 100px;
+    height: 4px;
+    background-color: white;
+}
+.my-skills {
+    background-color: #f0d691;
+    border-color: #d9ac78;
+    color: #000;
+    border-radius: 5px 5px 0 0 !important;
+}
+.my-skills {
+    background-color: #f0d691 !important;
+    border-bottom: 4px solid #d9ac78 !important;
+    color: #000;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px !important;
+}
+.my-skills:hover {
+    opacity: 0.8;
+    color: #000;
+}
+.btn:focus {
+    outline: none !important;
+}
+.my-skills-div {
+    background-color: #251c1a !important;
+}
+.radius_zero {
+    border-radius: 0 !important;
+}
+.btn, .btn:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.roboto-font {
+    font-family: 'Roboto' !important;
+}
+.skill-language {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}

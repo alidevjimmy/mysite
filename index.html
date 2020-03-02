@@ -11,12 +11,115 @@
     <link rel="stylesheet" href="./style/tablet.css">
     <link rel="stylesheet" href="./style/mobile.css">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/animation.min.css">
+    <!--    <link rel="stylesheet" href="./style/all.min.css">-->
+    <!--    <link rel="stylesheet" href="./style/fontawesome.min.css">-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="./style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./style/bootstrap-reboot.min.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light header">
+    <header class="container">
+        <a class="navbar-brand" href="http://alihamrani.ir">
+            <img src="./images/smostafa.png" class="logo" alt="لوگو">
+            <span class="font_mj_c text-logo">علی حمرانی</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-top: 10px">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item header-link">
+                    <a class="nav-link" href="#">درباره من</a>
+                </li>
+                <li class="nav-item header-link">
+                    <a class="nav-link" href="#">آخرین کارها</a>
+                </li>
+                <li class="nav-item header-link">
+                    <a class="nav-link" href="#">تماس</a>
+                </li>
+                <li class="nav-item header-link">
+                    <a class="nav-link yellow_color" style="color: #f0d691 !important;" href="!#">بلاگ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+</nav>
+<div class="jumbotron me" style="margin: 0">
+    <img src="./images/smostafa.png" class="img-me" alt="من" data-aos="fade-down">
+    <p><i class="fa fa-telegram"></i>
+    <h1 class="display-4 font_mj_c text-white" style="font-size: 78px ;" data-aos="flip-left">علی حمرانی</h1></p>
+    <br>
+    <h4 class="text-white" data-aos="flip-up">من عاشق برنامه نویسی هستم </h4></i>
+    <br>
+    <a class="btn know_me" href="#" data-aos="fade-left" role="button">مرا بهتر بشناسید</a>
+    <a class="btn sefarsh" data-aos="fade-right" href="!#" role="button"> سفارش</a>
+</div>
+<section class="jumbotron about pb-0 mb-0" id="about">
+    <div class="col-md-7 col-sm-12 d-flex" data-aos="fade-left">
+        <div class="col-sm-2 hidden-xs">
+            <img src="./images/smostafa.png" class="about-img" alt="من">
+        </div>
+        <div class="col-sm-10 hidden-xs d-block pt-2">
+            <div class="div-border position-relative" style="top: 35px"></div>
+            <h5 class="text-white float-right">علی حمرانی</h5>
+            <p class="text-white d-inline-block position-relative" style="top: 10px;direction: rtl;text-align: right">
+                گسترش دهنده وب و طراح حرفه ای و آزاد، با بیش تر صدها شرکت و وبسایت همکاری داشتم.
+                توضیح طولانی نشه، خلاصه ای از فعالیت های اصلیم رو تو تایملاین ذیل نوشتم.</p>
+        </div>
+    </div>
+    <div class="col-md-5 col-sm-12">
+
+    </div>
+    <div style="width: 100%;height: auto;text-align: center;margin-top: 10px">
+        <a class="btn my-skills" id="my_skills" data-toggle="collapse" href="#collapseExample" role="button"
+           aria-expanded="false"
+           aria-controls="collapseExample">
+            مهارت های من
+        </a>
+    </div>
+</section>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body my-skills-div radius_zero">
+        <div class="container" style="padding: 10px 0">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <span class="text-white roboto-font skill-language">Php 95%</span>
+            <span class="chart roboto-font text-white" data-percent="95">
+                <span class="percent"></span>
+            </span>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <span class="text-white roboto-font skill-language">React 80%</span>
+            <span class="chart roboto-font" data-percent="80">
+                <span class="percent"></span>
+            </span>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <span class="text-white roboto-font skill-language">Laravel 95%</span>
+            <span class="chart roboto-font" data-percent="95">
+                <span class="percent"></span>
+            </span>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <span class="text-white roboto-font skill-language">Django 70%</span>
+            <span class="chart roboto-font" data-percent="70">
+                <span class="percent"></span>
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/animation.min.js"></script>
 <script type="text/javascript" src="./js/jimmyx.js"></script>
-<script type="text/javascript" src="./js/jimmyx.js"></script>
+<script type="text/javascript" src="./js/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="./js/popper.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

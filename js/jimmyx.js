@@ -24,4 +24,17 @@ $(function () {
             }
         });
     })
+    $(window).scroll(function (event) {
+        let scrolled_y = window.scrollY;
+        if (scrolled_y <= 743) {
+            $('.header').css({
+                opacity : 0
+            })
+        }
+        else {
+            $('.header').css({
+                opacity : 1
+            })
+        }
+    });
 });

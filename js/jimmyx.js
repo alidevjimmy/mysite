@@ -68,4 +68,7 @@ $(function () {
             scrollTop : $('.me').offset().top
         } , 1000)
     })
+    $('.splash').css({
+        display : 'none'
+    })
 });

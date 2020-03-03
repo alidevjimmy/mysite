@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="./style/bootstrap-reboot.min.css">
 </head>
 <body>
+<div class="splash row" style="margin: 0 !important;">
+    <div class="loading" style="margin: auto">
+        <div class="loadingio-spinner-bean-eater-88n6pg3v6cb"><div class="ldio-dmc0fbn5cdd">
+                <div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div>
+            </div></div>
+    </div>
+</div>
 <?php
 if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SESSION['message'])) {
     ?>
@@ -52,7 +59,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
 <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
     <header class="container">
         <a class="navbar-brand logo-text-head-mob" href="http://alihamrani.ir">
-            <img src="./images/smostafa.png" class="logo" alt="لوگو">
+            <img src="./images/ali.png" style="border-radius: 50%" class="logo" alt="لوگو">
             <span class="font_mj_c text-logo"> علی حمرانی</span>
         </a>
         <a class="navbar-toggler btn-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -79,7 +86,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
     </header>
 </nav>
 <div class="jumbotron me" style="margin: 0">
-    <img src="./images/smostafa.png" class="img-me" alt="من" data-aos="fade-down">
+    <img src="./images/ali.png" style="border-radius: 50%" class="img-me" alt="من" data-aos="fade-down">
     <p><
     <h1 class="display-4 font_mj_c text-white titles" data-aos="fade-in">
         <a href="http://t.me/ali_jimmyX" class="social-media-header" target="_blank"><i
@@ -101,7 +108,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SE
 <section class="jumbotron about pb-0 mb-0" id="about">
     <div class="col-md-6 col-sm-12 d-flex offset-sm-3" data-aos="fade-left">
         <div class="col-sm-2 myimgabout">
-            <img src="./images/smostafa.png" class="about-img" alt="من">
+            <img src="./images/ali.png" style="border-radius: 50%" class="about-img" alt="من">
         </div>
         <div class="col-sm-10 hidden-xs d-block pt-2">
             <div class="div-border position-relative" style="top: 35px"></div>

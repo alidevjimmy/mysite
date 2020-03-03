@@ -30,11 +30,42 @@ $(function () {
             $('.header').css({
                 opacity : 0
             })
+            $('#goup').css({
+                opacity : 0
+            })
         }
         else {
             $('.header').css({
                 opacity : 1
             })
+            $('#goup').css({
+                opacity : 1
+            })
         }
     });
+    $('#aboutbtn , #knowme').click(function () {
+        $('html, body').animate({
+            scrollTop : $('#about').offset().top
+        } , 1000)
+    })
+    $('#refrencebtn').click(function () {
+        $('html, body').animate({
+            scrollTop : $('#refrence').offset().top
+        } , 1000)
+    })
+    $('#contactbtn , #sefaresh').click(function () {
+        $('html, body').animate({
+            scrollTop : $('#contact').offset().top
+        } , 1000)
+    })
+    $('#gome').click(function () {
+        $('html, body').animate({
+            scrollTop : $('.me').offset().top
+        } , 1000)
+    })
+    $('#goup').click(function () {
+        $('html, body').animate({
+            scrollTop : $('.me').offset().top
+        } , 1000)
+    })
 });

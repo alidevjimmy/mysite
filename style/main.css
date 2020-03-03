@@ -49,13 +49,12 @@ body {
 }
 body{
     line-height: 1.42857143;
+    font-family: "Mj_Tunisia" !important;
 }
 .yellow_color {
     color: #f0d691 !important;
 }
-* {
-    font-family: "Mj_Tunisia" !important;
-}
+
 .header-link{
     font-size: 20px;
     padding: 0 5px;
@@ -92,7 +91,7 @@ body{
 .img-me {
     margin: 0 auto 0 auto;
     max-height: 350px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     transition: 0.7s all !important;
 }
 .sefarsh {
@@ -127,7 +126,7 @@ body{
     height: auto;
 }
 .div-border {
-    width: 100px;
+    width: 150px;
     height: 4px;
     background-color: white;
 }
@@ -204,4 +203,113 @@ body{
     margin: auto;
     border-radius: 50%;
     background-color: white;
+}
+.mac_title {
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+    font-size: 26px;
+    position: relative;
+    bottom: 40px;
+}
+.desktop_mac {
+    background-image: url('../images/macbook.png');
+    height: 700px;
+}
+.contact-input {
+    box-shadow: none !important;
+    background-color: #fff;
+    border: 0;
+    height: 38px;
+    position: relative;
+    bottom: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.form-control {
+    box-shadow: none !important;
+}
+input , textarea {
+    border: none !important;
+}
+.contact-number {
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 12px;
+    text-align: right;
+    background-color: #d41b3f !important;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+.footer {
+    padding: 60px 0;
+    padding-bottom: 10px;
+    border-top: 8px solid rgba(0,0,0,0.1);
+    background-color: #251c1a;
+}
+.social-media i {
+    color: #ad3740;
+    font-size: 22px;
+    transition: 0.3s all;
+}
+.social-media i:hover {
+    color: #f0d691 !important;
+}
+
+.social-media {
+    margin: 0 20px;
+}
+.alicopy {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    color: #553436;
+    border-bottom: 4px solid #553436;
+    transition: 0.3s all;
+}
+.alicopy:hover {
+    color: white;
+    background-color: #553436;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 4px solid #fff;
+    text-decoration: none;
+}
+.social-media-header {
+    color : white;
+    background-color: transparent;
+    border-top: 3px solid #ad3740;
+    transition-duration: .2s;
+    font-size: 22px;
+    margin: 0 10px;
+    padding: 15px 15px;
+}
+.social-media-header:hover {
+    color: #ad3740;
+    border: none;
+}
+.btn-menu {
+    color: white;
+    height: 100%;
+    background-color: #ad3740 !important;
+    border-radius: 0 !important;
+    text-align: center;
+    padding: 14px 19px !important;
+    border-bottom: 8px solid rgba(0,0,0,0.1) !important;
+}
+#goup {
+    padding: 23px 30px;
+    background-color: #ad3740;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000000000000000000000000;
+    cursor: pointer;
+    transition: 0.3s all;
+    opacity: 0;
+}
+#goup:hover {
+    opacity: 0.8;
 }

@@ -5,7 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/jimmyx.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jimmyx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/desktop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/tablet.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/tablet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +75,8 @@
       <updated>1583135750421</updated>
       <workItem from="1583135751932" duration="17687000" />
       <workItem from="1583156420497" duration="714000" />
-      <workItem from="1583164314618" duration="10145000" />
+      <workItem from="1583164314618" duration="14160000" />
+      <workItem from="1583223158598" duration="9252000" />
     </task>
     <servers />
   </component>
@@ -84,13 +88,17 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="632" y="344" width="725" height="416" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583138862156" />
-    <state x="648" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1583164317878">
+    <state x="648" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1583223159283">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="648" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583164317878" />
+    <state x="648" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583223159283" />
     <state x="560" y="162" width="857" height="781" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583171002111">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="560" y="162" width="857" height="781" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583171002111" />
+    <state x="657" y="253" key="run.anything.popup" timestamp="1583228213021">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1583228213021" />
   </component>
 </project>

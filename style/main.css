@@ -299,7 +299,7 @@ input , textarea {
     border-bottom: 8px solid rgba(0,0,0,0.1) !important;
 }
 #goup {
-    padding: 23px 30px;
+    padding: 19px 25px;
     background-color: #ad3740;
     border-radius: 50%;
     position: fixed;
@@ -309,6 +309,7 @@ input , textarea {
     cursor: pointer;
     transition: 0.3s all;
     opacity: 0;
+    border: 8px solid rgba(0,0,0,0.1);
 }
 #goup:hover {
     opacity: 0.8;

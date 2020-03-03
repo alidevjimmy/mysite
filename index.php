@@ -17,6 +17,37 @@
     <link rel="stylesheet" href="./style/bootstrap-reboot.min.css">
 </head>
 <body>
+<?php
+if (isset($_SESSION['status']) && $_SESSION['status'] == 'success' && isset($_SESSION['message'])) {
+    ?>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert"
+         style="direction: rtl;text-align: right;background-color: #4caf50 !important;color: white !important;border-radius: 3px;border-bottom: 8px solid rgba(0,0,0,0.1) !important;    position: fixed;
+    top: 87px;
+    left: 20px;
+    width: 50%;
+    border: none;
+    z-index: 10000000000000000;">
+        <i class="fa fa-check ml-2 justify-content-center"></i>
+        <?php echo $_SESSION['message'] ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php } else if (isset($_SESSION['error']) && $_SESSION['status'] == 'error' && isset($_SESSION['message'])) { ?>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert"
+         style="direction: rtl;text-align: right;background-color: #f44336 !important;color: white !important;border-radius: 3px;border-bottom: 8px solid rgba(0,0,0,0.1) !important;position: fixed;
+    top: 87px;
+    left: 20px;
+    width: 50%;
+    border: none;
+    z-index: 10000000000000000;">
+        <i class="fa fa-info-circle ml-2 justify-content-center"></i>
+        <?php echo $_SESSION['message'] ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php } ?>
 <div id="goup"><i class="fa fa-mouse text-white"></i></div>
 <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
     <header class="container">
@@ -49,14 +80,16 @@
 </nav>
 <div class="jumbotron me" style="margin: 0">
     <img src="./images/smostafa.png" class="img-me" alt="من" data-aos="fade-down">
-    <p><i class="fa fa-telegram"></i>
+    <p><
     <h1 class="display-4 font_mj_c text-white titles" data-aos="fade-in">
-        <a href="" class="social-media-header" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="http://t.me/ali_jimmyX" class="social-media-header" target="_blank"><i
+                    class="fab fa-telegram-plane"></i></a>
         <a href="tel:09384720059" class="social-media-header"><i class="fa fa-phone"></i></a>
         علی حمرانی
         <a href="https://www.instagram.com/ali_jimmyx/" class="social-media-header" target="_blank"><i
-                class="fab fa-instagram"></i></a>
-        <a href="" class="social-media-header" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ali-hamrani-4a7718197" class="social-media-header" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
     </h1></p>
     <br>
     <h4 class="text-white" data-aos="fade-in">من عاشق برنامه نویسی هستم<i class="fa fa-heart mr-1"
@@ -206,13 +239,17 @@
                 <div class="row">
                     <div class="col-sm-8">
                         <h3 class="mac_title offset-1">ارسال پیغام</h3>
-                        <form action="#" method="post" class="offset-1">
-                            <input type="text" class="form-control contact-input" placeholder="نام کامل">
-                            <input type="text" class="form-control contact-input" placeholder="تلفن">
-                            <input type="text" class="form-control contact-input" placeholder="موضوع">
-                            <textarea type="text" class="form-control contact-input" rows="5"
+                        <form action="php/contact.php" method="post" class="offset-1">
+                            <input name="name" required id="name" type="text" class="form-control contact-input"
+                                   placeholder="نام کامل">
+                            <input name="phone" required id="phone" type="text" class="form-control contact-input"
+                                   placeholder="تلفن">
+                            <input name="title" required id="title" type="text" class="form-control contact-input"
+                                   placeholder="موضوع">
+                            <textarea name="body" required id="body" type="text" class="form-control contact-input"
+                                      rows="5"
                                       placeholder="توضیحات"></textarea>
-                            <button class="btn my-skills float-right">ارسال پیغام</button>
+                            <button class="btn my-skills float-right" type="submit">ارسال پیغام</button>
                         </form>
                     </div>
                     <div class="col-md-3">
@@ -228,13 +265,16 @@
         </div>
         <div class="row mob-form mt-5">
             <div class="col-sm-12">
-                <form action="#" method="post" class="offset-1">
-                    <input type="text" class="form-control contact-input" placeholder="نام کامل">
-                    <input type="text" class="form-control contact-input" placeholder="تلفن">
-                    <input type="text" class="form-control contact-input" placeholder="موضوع">
-                    <textarea type="text" class="form-control contact-input" rows="5"
+                <form action="php/contact.php" method="post" class="offset-1">
+                    <input name="name" required id="name1" type="text" class="form-control contact-input"
+                           placeholder="نام کامل">
+                    <input name="phone" required id="phone1" type="text" class="form-control contact-input"
+                           placeholder="تلفن">
+                    <input name="title" required id="title1" type="text" class="form-control contact-input"
+                           placeholder="موضوع">
+                    <textarea name="body" id="body1" type="text" class="form-control contact-input" rows="5"
                               placeholder="توضیحات"></textarea>
-                    <button class="btn my-skills float-right">ارسال پیغام</button>
+                    <button class="btn my-skills float-right" type="submit">ارسال پیغام</button>
                 </form>
             </div>
 
@@ -245,11 +285,13 @@
     <div class="container">
         <div class="row" style="text-align: center">
             <div style="margin: auto">
-                <a href="" class="social-media" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                <a href="http://t.me/ali_jimmyX" class="social-media" target="_blank"><i
+                            class="fab fa-telegram-plane"></i></a>
                 <a href="tel:09384720059" class="social-media"><i class="fa fa-phone"></i></a>
                 <a href="https://www.instagram.com/ali_jimmyx/" class="social-media" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="" class="social-media" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ali-hamrani-4a7718197" class="social-media" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
         <br>
@@ -278,3 +320,4 @@
 <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+<?php //session_abort() ?>
